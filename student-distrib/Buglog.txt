@@ -1,0 +1,58 @@
+Group 38 Bug log
+
+  Checkpoint 1:
+
+	bug: Assembler messages Error: no such instruction "idt_init()"
+	-fixed by not including idt.h in other files
+	
+	bug: keyboard handler not working
+	-fixed by uncommenting the enable interrupt part in kernel.c
+
+	bug: keyboard handler prints strange char after the number printed on screen
+	-fixed by setting the scan code array size to be 58
+
+  Checkpoint 2:
+
+	bug: buffer filled with unexpected things
+	-fixed by putting things in buffer null terminated
+
+	bug: read byte incorrectly from data blocks
+	-fixed by clip the length of reading
+
+
+  Checkpoint 3:
+
+	bug: general protection after doing execute
+	-fixed by writing assembly in another file
+
+	bug: page fault after iret
+	-fixed by not restoring EAX value in system call wrapper
+
+	bug: not passing sys error 4
+	-fixed by checking empty string in sys call open
+
+	bug: not passing sys error 5
+	-fixed by checking string length of file name in read_dentry_by_name
+
+  Checkpoint 4:
+
+	bug: page fault when exiting the first shell
+	-fixed by execute another shell when halting the last program
+
+	bug: cat prints the content of the file repeatedly
+	-fixed by updating the file position in file read
+
+	bug: grep cannot open verylargetextwithverylongname.tx
+	-fixed by reading all 32 bytes from dentry
+
+  Checkpoint 5:
+	
+	bug: page faulting whole screen when boot up
+	- fixed by adjusting process num in term structure
+
+	bug: page faulting when switching terminals
+	- cannot figure out why
+	
+	bug: keyboard cannot recognize alt + fn combination
+	-fixed in keyboard driver
+
