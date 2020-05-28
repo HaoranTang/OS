@@ -4,8 +4,9 @@ Please review the University of Illinois Student Code before starting,
 particularly all subsections of Article 1, Part 4 Academic Integrity and Procedure [here](http://studentcode.illinois.edu/article1_part4_1-401.html).
 
 DO NOT COPY THIS MP IT IS INCOMPLETE
+------------------------------------
 CHECKPOINT 5 FAILED TO WORK, 1-4 WORK FINE
-
+------------------------------------------
 
 LEGAL
 -----
